@@ -1,0 +1,16 @@
+<div>
+  <!-- Classifiction L -->
+  <h1>Search</h1>
+  <div class="h-box">
+    <div class="cl cl-left">By Career</div>
+    <div class="cl cl-right">By Manufacturer</div>
+  </div>
+  <!-- Classifiction M -->
+  <div class="cm">
+    <h2>{{groupName}}</h2>
+    <app-thumbnail *ngFor="let item of group"
+      [styleClass]=""
+      [text]="item.name"
+    ></app-thumbnail>
+  </div>
+</div>

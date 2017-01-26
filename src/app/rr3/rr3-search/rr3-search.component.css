@@ -1,0 +1,27 @@
+:host div {
+    display: flex;
+    display: -moz-flex;
+    display: -o-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    flex-direction: row;
+    -moz-flex-direction: row;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    justify-content: space-between;
+    background: black;
+}
+
+.left {
+    width: 20%;
+    margin-right: 1px;
+}
+
+.middle {
+    width: 20%;
+    margin-right: 1px;
+}
+
+.right {
+    width: 60%;
+}

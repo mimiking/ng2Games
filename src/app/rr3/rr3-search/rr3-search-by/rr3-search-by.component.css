@@ -1,0 +1,25 @@
+.h-box {
+    display: flex;
+    display: -moz-flex;
+    display: -o-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    flex-direction: row;
+    -moz-flex-direction: row;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    justify-content: space-between;
+    background: black;
+}
+
+.cl {
+    width: 50%;
+}
+
+.cl-left {
+    background: green;
+}
+
+.cl-right {
+    background-color: darkslateblue;
+}
