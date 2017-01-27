@@ -1,16 +1,25 @@
 <div>
   <!-- Classifiction L -->
+  <!--
   <h1>Search</h1>
   <div class="h-box">
-    <div class="cl cl-left">By Career</div>
-    <div class="cl cl-right">By Manufacturer</div>
+    <app-thumbnail *ngFor="let way of ways"
+      [styleClass]="way.styleClass"
+      [thumb]="way"
+      (onSelect)="doSelectL($event)"
+    ></app-thumbnail>
   </div>
+  -->
   <!-- Classifiction M -->
   <div class="cm">
-    <h2>{{groupName}}</h2>
-    <app-thumbnail *ngFor="let item of group"
-      [styleClass]=""
-      [text]="item.name"
-    ></app-thumbnail>
+    
+    <div class="items">
+      <h2>{{groupName}}</h2>
+      <app-thumbnail *ngFor="let item of group"
+        [styleClass]="'m-box'"
+        [thumb]="item"
+        (onSelect)="doSelectM($event)"
+      ></app-thumbnail>
+    </div>
   </div>
 </div>

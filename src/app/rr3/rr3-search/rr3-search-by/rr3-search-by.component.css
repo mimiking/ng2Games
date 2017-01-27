@@ -9,17 +9,11 @@
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     justify-content: space-between;
-    background: black;
 }
 
-.cl {
-    width: 50%;
-}
+.items {
+    padding:5px;
+    /**background: linear-gradient(midnightblue,midnightblue);**/
+    background: white;
 
-.cl-left {
-    background: green;
-}
-
-.cl-right {
-    background-color: darkslateblue;
 }

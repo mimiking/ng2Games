@@ -1,0 +1,28 @@
+[{
+    "code": "01",
+    "name": "AMATEUR"
+}, {
+    "code": "02",
+    "name": "NASCAR"
+}, {
+    "code": "03",
+    "name": "PRO/AM"
+}, {
+    "code": "04",
+    "name": "PRO"
+}, {
+    "code": "05",
+    "name": "EXPERT"
+}, {
+    "code": "06",
+    "name": "MASTER"
+}, {
+    "code": "07",
+    "name": "ELITE"
+}, {
+    "code": "08",
+    "name": "LEGEND"
+}, {
+    "code": "09",
+    "name": "EXCLUSIVE"
+}]

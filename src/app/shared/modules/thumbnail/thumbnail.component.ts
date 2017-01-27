@@ -1,4 +1,6 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Input, Output, EventEmitter } from '@angular/core';
+
 
 @Component({
   selector: 'app-thumbnail',
@@ -10,12 +12,19 @@ export class ThumbnailComponent implements OnInit {
   @Input('styleClass')
   styleClass: string;
 
-  @Input('text')
-  text: string;
+  @Input('thumb')
+  thumb: any;
+
+  @Output('onSelect')
+  onSelect: EventEmitter<any> = new EventEmitter<any>(); 
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  doThumbClick(thumb: any) {
+    this.onSelect.emit(thumb);
   }
 
 }

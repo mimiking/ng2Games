@@ -10,6 +10,9 @@ import { Rr3CareerComponent } from './rr3-career.component';
   ],
   declarations: [
     Rr3CareerComponent
+  ],
+  exports: [
+    Rr3CareerComponent
   ]
 })
 export class Rr3CareerModule { }

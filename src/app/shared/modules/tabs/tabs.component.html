@@ -1,0 +1,9 @@
+<div>
+  <div class="h-box">
+    <div class="tab {{tab.styleClass}}" *ngFor="let tab of tabs" 
+      [ngClass]="{selected: tab.selected}"
+      (click)="doTabClick(tab)">
+      <span>{{tab.name}}</span>
+    </div>
+  </div>
+</div>

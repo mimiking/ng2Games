@@ -1,0 +1,40 @@
+:host {
+    width: 100%;
+    background:white;
+}
+
+.h-box {
+    display: flex;
+    display: -moz-flex;
+    display: -o-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    flex-direction: row;
+    -moz-flex-direction: row;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    justify-content: flex-start;
+}
+
+.tab {
+    height: 30px;
+    border: none;
+    padding-left: 5px;
+    padding-right: 5px;
+    background: linear-gradient(#A4A4A4, #848484);
+}
+
+.tab:hover {
+    cursor: pointer;
+    opacity:0.8;
+	filter: alpha(opacity=80);
+	-ms-filter: "alpha( opacity=80 )";
+}
+
+.selected {
+    background: linear-gradient(#642EFE,midnightblue);
+    opacity:0.8;
+	filter: alpha(opacity=80);
+	-ms-filter: "alpha( opacity=80 )";
+    color:white;
+}

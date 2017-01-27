@@ -1,6 +1,17 @@
-<div>
+<div><app-tabs [tabs]="tabs" (tabSelect)="doTabSelect($event)"></app-tabs></div>
+<div [ngSwitch]="selectedTab.code" class="container">
+  <!-- career -->
+  <div *ngSwitchCase="'01'">
+    <app-rr3-career></app-rr3-career>
+  </div>
+  <!-- Manufacturer -->
+  <div *ngSwitchCase="'02'">output02</div>
+  <div *ngSwitchDefault>default</div>
+</div>
+
+<div class="container h-box">
   <!-- conditions -->
-  <div class="left"><app-rr3-search-by></app-rr3-search-by></div>
+  <div class="left"><app-rr3-search-by [way]="selectedTab"></app-rr3-search-by></div>
   <!-- models -->
   <div class="middle"><app-rr3-search-models></app-rr3-search-models></div>
   <!-- details -->

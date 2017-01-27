@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ThumbnailModule } from '../../shared/modules/thumbnail/thumbnail.module';
+import { TabsModule } from '../../shared/modules/tabs/tabs.module';
+import { Rr3CareerModule } from '../rr3-career/rr3-career.module';
 
 import { BaseService } from '../../shared/services/base.service';
 import { Rr3SearchService } from './services/rr3-search.service';
@@ -15,7 +17,9 @@ import { Rr3SearchListComponent } from './rr3-search-list/rr3-search-list.compon
 @NgModule({
   imports: [
     CommonModule,
-    ThumbnailModule
+    ThumbnailModule,
+    TabsModule,
+    Rr3CareerModule
   ],
   declarations: [
     Rr3SearchComponent,
